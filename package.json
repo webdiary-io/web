@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export":"yarn build && next export -o _static"
+    "export":"yarn build && next export -o _static",
+    "server":"next start -H 0.0.0.0 ${PORT:-8080}"
   },
   "dependencies": {
     "next": "10.0.3",
