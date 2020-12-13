@@ -6,12 +6,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export":"yarn build && next export -o _static",
-    "server":"next start -H 0.0.0.0 ${PORT:-8080}"
+    "export": "yarn build && next export -o _static",
+    "server": "next start -H 0.0.0.0 ${PORT:-8080}"
   },
   "dependencies": {
+    "date-fns": "^2.16.1",
+    "gray-matter": "^4.0.2",
     "next": "10.0.3",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.13",
+    "@types/react": "^17.0.0",
+    "typescript": "^4.1.3"
   }
 }
